@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5673ef167167442eb052e774ec78bab6" Name="Diagram1">
+        <EntityTypeShape EntityType="DbAdrianaModel.Customer" Width="1.5" PointX="5.25" PointY="5.75" />
+        <EntityTypeShape EntityType="DbAdrianaModel.Ingredient" Width="1.5" PointX="5.25" PointY="10.125" />
+        <EntityTypeShape EntityType="DbAdrianaModel.OrderItem" Width="1.5" PointX="9.75" PointY="5.875" />
+        <EntityTypeShape EntityType="DbAdrianaModel.Order" Width="1.5" PointX="7.5" PointY="5.5" />
+        <EntityTypeShape EntityType="DbAdrianaModel.Product" Width="1.5" PointX="7.5" PointY="9.75" />
+        <EntityTypeShape EntityType="DbAdrianaModel.Role" Width="1.5" PointX="0.75" PointY="3" />
+        <EntityTypeShape EntityType="DbAdrianaModel.Storage" Width="1.5" PointX="9.75" PointY="10" />
+        <EntityTypeShape EntityType="DbAdrianaModel.sysdiagram" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="DbAdrianaModel.User" Width="1.5" PointX="3" PointY="2.625" />
+        <EntityTypeShape EntityType="DbAdrianaModel.UsersRolesOrder" Width="1.5" PointX="5.25" PointY="2.875" />
+        <AssociationConnector Association="DbAdrianaModel.FK_Customers_Users" />
+        <AssociationConnector Association="DbAdrianaModel.FK_Orders_Customers" />
+        <AssociationConnector Association="DbAdrianaModel.FK_OrderItems_Orders" />
+        <AssociationConnector Association="DbAdrianaModel.FK_OrderItems_Products" />
+        <AssociationConnector Association="DbAdrianaModel.FK_Storages_Products" />
+        <AssociationConnector Association="DbAdrianaModel.FK_Users_Roles" />
+        <AssociationConnector Association="DbAdrianaModel.FK_UsersRolesOrders_Roles" />
+        <AssociationConnector Association="DbAdrianaModel.FK_UsersRolesOrders_Users1" />
+        <AssociationConnector Association="DbAdrianaModel.ProductsIngredients" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
