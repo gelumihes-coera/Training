@@ -1,0 +1,32 @@
+﻿@model IEnumerable<FirstReactJS.Models.CommentModel>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<script src="https://fb.me/react-0.14.0.min.js"></script>
+<script src="https://fb.me/react-dom-0.14.0.min.js"></script>
+
+@Html.React("CommentBox", new
+{
+    initialData = Model,
+    url = Url.Action("Comments"),
+    submitUrl = Url.Action("AddComment"),
+    pollInterval = 2000,
+    containerId = "content"
+})
+
+<div id="content"></div>
+
+@section Scripts {
+    <script>
+        ReactDOM.render(
+            document.getElementById('content')
+        );
+    </script>
+}
+
+@Scripts.Render("~/bundles/main")
+@Scripts.Render("~/Scripts/Tutorial.jsx")
+@Scripts.Render("~/Scripts/showdown.js")
+@Html.ReactInitJavaScript()
