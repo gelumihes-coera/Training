@@ -1,0 +1,17 @@
+﻿<div class="container">
+    <h2>Author Details</h2>
+    <div class="row">
+        <table class="table table-condensed table-hover">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Written Books</th>
+            </tr>
+            <tr ng-repeat="author in authors">
+                <td> {{author.id}}</td>
+                <td> {{author.name}}</td>
+                <td> {{author.writtenBooks}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

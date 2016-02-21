@@ -1,0 +1,24 @@
+﻿@model string
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/Library/bookController.js"></script>
+<script src="~/Scripts/Library/libraryController.js"></script>
+<script src="~/Scripts/Library/authorController.js"></script>
+<script src="~/Scripts/Library/orderDirective.js"></script>
+<div class="container">
+    <div class="navbar navbar-default">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav">
+                <li class="navbar-brand"><a href="/Library/Books">Books</a></li>
+                <li class="navbar-brand"><a href="/Library/Authors">Authors</a></li>
+                <li class="navbar-brand"><a href="/Library/AddAuthor">Add Author</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div ng-view>
+
+    </div>
+</div>
